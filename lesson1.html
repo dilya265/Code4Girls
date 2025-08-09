@@ -1,0 +1,41 @@
+lesson1.html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Урок 1 | Code4Girls</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">💖 Code4Girls</div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="articles.html">Статьи</a>
+      <a href="learning.html">Обучение</a>
+    </nav>
+  </header>
+
+  <main class="lesson">
+    <h1>Урок 1: Что такое HTML?</h1>
+    <p>HTML — это язык разметки, который говорит браузеру, как отображать веб-страницы. Пример:</p>
+    <pre>
+      &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    </pre>
+    <p>А вот видео, где всё объясняется:</p>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allowfullscreen></iframe>
+    
+    <p>🎯 Задание: Напиши свой первый тег &lt;h1&gt; в HTML-редакторе (можно использовать https://codepen.io)</p>
+
+    <button onclick="completeLesson()">Завершить урок</button>
+  </main>
+
+  <script>
+    function completeLesson() {
+      alert("Молодец! 🎉 Урок пройден. Ты получила 10 XP и +1 стрик!");
+      // Сохраняем прогресс (позже сделаем детально)
+      localStorage.setItem("lesson1_complete", "true");
+    }
+  </script>
+</body>
+</html>
