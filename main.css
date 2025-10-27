@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background: linear-gradient(90deg, #f9c5d1, #fddde6);
+  background: #f9c5d1;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -153,6 +153,7 @@ nav a:hover {
 }
 
 .ready h2 {
+  font-family: 'Great Vibes', cursive;
   font-size: 36px;
   color: #d63384;
   margin-bottom: 20px;
