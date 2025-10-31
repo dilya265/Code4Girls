@@ -295,3 +295,138 @@ form a {
     width: 100%;
   }
 }
+
+
+
+
+
+/* ===== Основные стили ===== */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== Шапка ===== */
+header {
+  background-color: #f9c5d5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: white;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #d63384;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.profile-icon {
+  font-size: 26px;
+  color: #d63384;
+  cursor: pointer;
+}
+
+/* ===== Карточки статей ===== */
+.articles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+.article-card {
+  background-color: #f9a8c4;
+  border-radius: 20px;
+  width: 220px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-8px);
+}
+
+.article-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.article-card h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 26px;
+  color: white;
+  margin: 10px 0 5px;
+}
+
+.article-card p {
+  color: white;
+  font-size: 14px;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
+
+.article-card a {
+  display: inline-block;
+  color: black;
+  font-style: italic;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.article-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Блок "Want to publish..." ===== */
+.publish-section {
+  background-color: #f9c5d5;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.publish-section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  color: #e75480;
+  margin-bottom: 40px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: white;
+  color: #e75480;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  border: 2px solid #e75480;
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #e75480;
+  color: white;
+}
