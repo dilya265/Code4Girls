@@ -1,27 +1,66 @@
-learning.html
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Обучение | Code4Girls</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code for Girls — Lessons</title>
+  <link rel="stylesheet" href="lessons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">💖 Code4Girls</div>
+  <!-- Шапка -->
+  <header>
+    <div class="logo">Code for Girls</div>
     <nav>
-      <a href="index.html">Главная</a>
-      <a href="articles.html">Статьи</a>
-      <a href="learning.html">Обучение</a>
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="lessons.html" class="active">Learning</a>
+      <a href="contact.html">Contact</a>
     </nav>
+    <div class="profile-icon">👩‍💻</div>
   </header>
 
-  <section class="islands">
-    <h2>Выбери свой первый урок</h2>
-    <div class="lesson-grid">
-      <a href="lesson1.html" class="lesson-block">Урок 1: Что такое HTML?</a>
-      <!-- В будущем добавим больше -->
+  <!-- Заголовок страницы -->
+  <section class="lesson-header">
+    <h1>Welcome to Your Coding Adventure!</h1>
+    <h2>Select your lesson</h2>
+  </section>
+
+  <!-- Карта уроков -->
+  <section class="lesson-map">
+    <div class="path">
+      <div class="lesson island unlocked" onclick="location.href='lesson1.html'">
+        <p>Lesson 1</p>
+      </div>
+      <div class="line"></div>
+      <div class="lesson island unlocked" onclick="location.href='lesson2.html'">
+        <p>Lesson 2</p>
+      </div>
+      <div class="line"></div>
+      <div class="lesson island unlocked" onclick="location.href='lesson3.html'">
+        <p>Lesson 3</p>
+      </div>
+      <div class="line"></div>
+      <div class="lesson island unlocked" onclick="location.href='lesson4.html'">
+        <p>Lesson 4</p>
+      </div>
+      <div class="line"></div>
+      <div class="lesson island unlocked" onclick="location.href='lesson5.html'">
+        <p>Lesson 5</p>
+      </div>
+      <div class="line"></div>
+      <!-- Облака (ещё не открытые) -->
+      <div class="lesson cloud">
+        <p>☁</p>
+      </div>
+      <div class="lesson cloud">
+        <p>☁</p>
+      </div>
+      <div class="lesson cloud">
+        <p>☁</p>
+      </div>
     </div>
   </section>
+
 </body>
 </html>
