@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== Шапка ===== */
+header {
+  background-color: #f9c5d5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: white;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #d63384;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.profile-icon {
+  font-size: 28px;
+  color: #d63384;
+}
+
+/* ===== Заголовки ===== */
+.lesson-header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.lesson-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #d63384;
+}
+
+.lesson-header h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+  color: #f6a5c0;
+  margin-top: 10px;
+}
+
+/* ===== Карта уроков ===== */
+.lesson-map {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.path {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.lesson {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* ===== Островки (доступные уроки) ===== */
+.island.unlocked {
+  background-color: #f9a8c4;
+  color: white;
+  box-shadow: 0 4px 8px rgba(249, 168, 196, 0.4);
+}
+
+.island.unlocked:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Облака (ещё не открытые уроки) ===== */
+.cloud {
+  background-color: #fbe4ec;
+  color: #f9a8c4;
+  font-size: 28px;
+  cursor: default;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== Линии между островками ===== */
+.line {
+  width: 60px;
+  height: 4px;
+  background-color: #f9a8c4;
+  border-radius: 2px;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 700px) {
+  .lesson {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+  .line {
+    width: 40px;
+  }
+}
